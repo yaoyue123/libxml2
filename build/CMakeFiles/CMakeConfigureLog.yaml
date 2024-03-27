@@ -1,0 +1,1531 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      The system is: Linux - 5.10.0-60.88.0.112.oe2203.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/3.28.1/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-PuJzOj"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-PuJzOj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-PuJzOj'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d298/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7d298.dir/build.make CMakeFiles/cmTC_7d298.dir/build
+        gmake[1]: Entering directory '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-PuJzOj'
+        Building C object CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-linux-gnu
+        Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,fortran,lto --enable-plugin --enable-initfini-array --disable-libgcj --without-isl --without-cloog --enable-gnu-indirect-function --build=x86_64-linux-gnu --with-stage1-ldflags=' -Wl,-z,relro,-z,now' --with-boot-ldflags=' -Wl,-z,relro,-z,now' --disable-bootstrap --with-tune=generic --with-arch_32=x86-64 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-linux-gnu/10.3.1/cc1 -quiet -v /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccen9j5p.s
+        GNU C17 (GCC) version 10.3.1 (x86_64-linux-gnu)
+        	compiled by GNU C version 10.3.1, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10.3.1/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/10.3.1/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 10.3.1 (x86_64-linux-gnu)
+        	compiled by GNU C version 10.3.1, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d3089ed0a950f895908bdbcbae0dadc7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o /tmp/ccen9j5p.s
+        GNU assembler version 2.37 (x86_64-openEuler-linux) using BFD version (GNU Binutils) 2.37
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_7d298
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d298.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -o cmTC_7d298 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/lto-wrapper
+        Target: x86_64-linux-gnu
+        Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,fortran,lto --enable-plugin --enable-initfini-array --disable-libgcj --without-isl --without-cloog --enable-gnu-indirect-function --build=x86_64-linux-gnu --with-stage1-ldflags=' -Wl,-z,relro,-z,now' --with-boot-ldflags=' -Wl,-z,relro,-z,now' --disable-bootstrap --with-tune=generic --with-arch_32=x86-64 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d298' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-linux-gnu/10.3.1/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cczqTRbS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7d298 /usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10.3.1 -L/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../.. CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d298' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-PuJzOj'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/local/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-PuJzOj']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d298/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7d298.dir/build.make CMakeFiles/cmTC_7d298.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-PuJzOj']
+        ignore line: [Building C object CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,fortran,lto --enable-plugin --enable-initfini-array --disable-libgcj --without-isl --without-cloog --enable-gnu-indirect-function --build=x86_64-linux-gnu --with-stage1-ldflags=' -Wl,-z,relro,-z,now' --with-boot-ldflags=' -Wl,-z,relro,-z,now' --disable-bootstrap --with-tune=generic --with-arch_32=x86-64 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/10.3.1/cc1 -quiet -v /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccen9j5p.s]
+        ignore line: [GNU C17 (GCC) version 10.3.1 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.1  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10.3.1/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10.3.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 10.3.1 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.1  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d3089ed0a950f895908bdbcbae0dadc7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o /tmp/ccen9j5p.s]
+        ignore line: [GNU assembler version 2.37 (x86_64-openEuler-linux) using BFD version (GNU Binutils) 2.37]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_7d298]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d298.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -o cmTC_7d298 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/lto-wrapper]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,fortran,lto --enable-plugin --enable-initfini-array --disable-libgcj --without-isl --without-cloog --enable-gnu-indirect-function --build=x86_64-linux-gnu --with-stage1-ldflags=' -Wl,-z,relro,-z,now' --with-boot-ldflags=' -Wl,-z,relro,-z,now' --disable-bootstrap --with-tune=generic --with-arch_32=x86-64 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10.3.1/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d298' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/10.3.1/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cczqTRbS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7d298 /usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10.3.1 -L/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../.. CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/10.3.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cczqTRbS.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7d298] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/10.3.1] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10.3.1]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../..]
+          arg [CMakeFiles/cmTC_7d298.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtend.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtend.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10.3.1] ==> [/usr/lib/gcc/x86_64-linux-gnu/10.3.1]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10.3.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtbegin.o;/usr/lib/gcc/x86_64-linux-gnu/10.3.1/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10.3.1;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:111 (check_include_files)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-dLzeLb"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-dLzeLb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-dLzeLb'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_532cc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_532cc.dir/build.make CMakeFiles/cmTC_532cc.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-dLzeLb”
+        Building C object CMakeFiles/cmTC_532cc.dir/HAVE_UNISTD_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_532cc.dir/HAVE_UNISTD_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-dLzeLb/HAVE_UNISTD_H.c
+        Linking C executable cmTC_532cc
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_532cc.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_532cc.dir/HAVE_UNISTD_H.c.o -o cmTC_532cc 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-dLzeLb”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:112 (check_symbol_exists)"
+    checks:
+      - "Looking for F_GETFL"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bbptas"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bbptas"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_F_GETFL"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bbptas'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_48288/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_48288.dir/build.make CMakeFiles/cmTC_48288.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bbptas”
+        Building C object CMakeFiles/cmTC_48288.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_48288.dir/CheckSymbolExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bbptas/CheckSymbolExists.c
+        Linking C executable cmTC_48288
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48288.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_48288.dir/CheckSymbolExists.c.o -o cmTC_48288 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bbptas”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.28/Modules/FindIconv.cmake:115 (check_c_source_compiles)"
+      - "CMakeLists.txt:145 (find_package)"
+    checks:
+      - "Performing Test Iconv_IS_BUILT_IN"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-v8g8mj"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-v8g8mj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "Iconv_IS_BUILT_IN"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-v8g8mj'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa197/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fa197.dir/build.make CMakeFiles/cmTC_fa197.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-v8g8mj”
+        Building C object CMakeFiles/cmTC_fa197.dir/src.c.o
+        /usr/bin/cc -DIconv_IS_BUILT_IN   -o CMakeFiles/cmTC_fa197.dir/src.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-v8g8mj/src.c
+        Linking C executable cmTC_fa197
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa197.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fa197.dir/src.c.o -o cmTC_fa197 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-v8g8mj”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/FindLibLZMA.cmake:97 (CHECK_LIBRARY_EXISTS)"
+      - "CMakeLists.txt:153 (find_package)"
+    checks:
+      - "Looking for lzma_auto_decoder in /usr/lib64/liblzma.so"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-WXvBKr"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-WXvBKr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "LIBLZMA_HAS_AUTO_DECODER"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-WXvBKr'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f87b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7f87b.dir/build.make CMakeFiles/cmTC_7f87b.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-WXvBKr”
+        Building C object CMakeFiles/cmTC_7f87b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder -o CMakeFiles/cmTC_7f87b.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-WXvBKr/CheckFunctionExists.c
+        Linking C executable cmTC_7f87b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f87b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder CMakeFiles/cmTC_7f87b.dir/CheckFunctionExists.c.o -o cmTC_7f87b  /usr/lib64/liblzma.so 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-WXvBKr”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/FindLibLZMA.cmake:98 (CHECK_LIBRARY_EXISTS)"
+      - "CMakeLists.txt:153 (find_package)"
+    checks:
+      - "Looking for lzma_easy_encoder in /usr/lib64/liblzma.so"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-u18Lq8"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-u18Lq8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "LIBLZMA_HAS_EASY_ENCODER"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-u18Lq8'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_214d9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_214d9.dir/build.make CMakeFiles/cmTC_214d9.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-u18Lq8”
+        Building C object CMakeFiles/cmTC_214d9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder -o CMakeFiles/cmTC_214d9.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-u18Lq8/CheckFunctionExists.c
+        Linking C executable cmTC_214d9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_214d9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder CMakeFiles/cmTC_214d9.dir/CheckFunctionExists.c.o -o cmTC_214d9  /usr/lib64/liblzma.so 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-u18Lq8”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/FindLibLZMA.cmake:99 (CHECK_LIBRARY_EXISTS)"
+      - "CMakeLists.txt:153 (find_package)"
+    checks:
+      - "Looking for lzma_lzma_preset in /usr/lib64/liblzma.so"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-mOeLlY"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-mOeLlY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "LIBLZMA_HAS_LZMA_PRESET"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-mOeLlY'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_03d69/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_03d69.dir/build.make CMakeFiles/cmTC_03d69.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-mOeLlY”
+        Building C object CMakeFiles/cmTC_03d69.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset -o CMakeFiles/cmTC_03d69.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-mOeLlY/CheckFunctionExists.c
+        Linking C executable cmTC_03d69
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03d69.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset CMakeFiles/cmTC_03d69.dir/CheckFunctionExists.c.o -o cmTC_03d69  /usr/lib64/liblzma.so 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-mOeLlY”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/local/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:157 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-RLD6KB"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-RLD6KB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-RLD6KB'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fc385/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fc385.dir/build.make CMakeFiles/cmTC_fc385.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-RLD6KB”
+        Building C object CMakeFiles/cmTC_fc385.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fc385.dir/src.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-RLD6KB/src.c
+        Linking C executable cmTC_fc385
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc385.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fc385.dir/src.c.o -o cmTC_fc385 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-RLD6KB”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:167 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_ATTRIBUTE_DESTRUCTOR"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lVYCx0"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lVYCx0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ATTRIBUTE_DESTRUCTOR"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lVYCx0'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a2773/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a2773.dir/build.make CMakeFiles/cmTC_a2773.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lVYCx0”
+        Building C object CMakeFiles/cmTC_a2773.dir/src.c.o
+        /usr/bin/cc -DHAVE_ATTRIBUTE_DESTRUCTOR   -o CMakeFiles/cmTC_a2773.dir/src.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lVYCx0/src.c
+        Linking C executable cmTC_a2773
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2773.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_a2773.dir/src.c.o -o cmTC_a2773 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lVYCx0”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:175 (check_include_files)"
+    checks:
+      - "Looking for include file arpa/inet.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ETuvzm"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ETuvzm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ARPA_INET_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ETuvzm'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4545c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4545c.dir/build.make CMakeFiles/cmTC_4545c.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ETuvzm”
+        Building C object CMakeFiles/cmTC_4545c.dir/HAVE_ARPA_INET_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4545c.dir/HAVE_ARPA_INET_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ETuvzm/HAVE_ARPA_INET_H.c
+        Linking C executable cmTC_4545c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4545c.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4545c.dir/HAVE_ARPA_INET_H.c.o -o cmTC_4545c 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ETuvzm”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:176 (check_function_exists)"
+    checks:
+      - "Looking for class"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-LGLVmU"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-LGLVmU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_CLASS"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-LGLVmU'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_03f62/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_03f62.dir/build.make CMakeFiles/cmTC_03f62.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-LGLVmU”
+        Building C object CMakeFiles/cmTC_03f62.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=class -o CMakeFiles/cmTC_03f62.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-LGLVmU/CheckFunctionExists.c
+        Linking C executable cmTC_03f62
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03f62.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=class CMakeFiles/cmTC_03f62.dir/CheckFunctionExists.c.o -o cmTC_03f62 
+        /usr/bin/ld: CMakeFiles/cmTC_03f62.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `class'
+        collect2: 错误：ld 返回 1
+        gmake[1]: *** [CMakeFiles/cmTC_03f62.dir/build.make:99：cmTC_03f62] 错误 1
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-LGLVmU”
+        gmake: *** [Makefile:127：cmTC_03f62/fast] 错误 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:177 (check_include_files)"
+    checks:
+      - "Looking for include file dlfcn.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-xp08X6"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-xp08X6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-xp08X6'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_27d3f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_27d3f.dir/build.make CMakeFiles/cmTC_27d3f.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-xp08X6”
+        Building C object CMakeFiles/cmTC_27d3f.dir/HAVE_DLFCN_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_27d3f.dir/HAVE_DLFCN_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-xp08X6/HAVE_DLFCN_H.c
+        Linking C executable cmTC_27d3f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27d3f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_27d3f.dir/HAVE_DLFCN_H.c.o -o cmTC_27d3f 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-xp08X6”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:178 (check_library_exists)"
+    checks:
+      - "Looking for dlopen in dl"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-7OKKts"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-7OKKts"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_DLOPEN"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-7OKKts'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dea21/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dea21.dir/build.make CMakeFiles/cmTC_dea21.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-7OKKts”
+        Building C object CMakeFiles/cmTC_dea21.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dlopen -o CMakeFiles/cmTC_dea21.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-7OKKts/CheckFunctionExists.c
+        Linking C executable cmTC_dea21
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dea21.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dlopen CMakeFiles/cmTC_dea21.dir/CheckFunctionExists.c.o -o cmTC_dea21  -ldl 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-7OKKts”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:179 (check_include_files)"
+    checks:
+      - "Looking for include file dl.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ZdTnfh"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ZdTnfh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_DL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ZdTnfh'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae8be/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae8be.dir/build.make CMakeFiles/cmTC_ae8be.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ZdTnfh”
+        Building C object CMakeFiles/cmTC_ae8be.dir/HAVE_DL_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ae8be.dir/HAVE_DL_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ZdTnfh/HAVE_DL_H.c
+        /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ZdTnfh/HAVE_DL_H.c:2:10: 致命错误：dl.h：No such file or directory
+            2 | #include <dl.h>
+              |          ^~~~~~
+        编译中断。
+        gmake[1]: *** [CMakeFiles/cmTC_ae8be.dir/build.make:78：CMakeFiles/cmTC_ae8be.dir/HAVE_DL_H.c.o] 错误 1
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ZdTnfh”
+        gmake: *** [Makefile:127：cmTC_ae8be/fast] 错误 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:180 (check_include_files)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-yNLiz2"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-yNLiz2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-yNLiz2'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_02ae5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_02ae5.dir/build.make CMakeFiles/cmTC_02ae5.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-yNLiz2”
+        Building C object CMakeFiles/cmTC_02ae5.dir/HAVE_FCNTL_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_02ae5.dir/HAVE_FCNTL_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-yNLiz2/HAVE_FCNTL_H.c
+        Linking C executable cmTC_02ae5
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02ae5.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_02ae5.dir/HAVE_FCNTL_H.c.o -o cmTC_02ae5 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-yNLiz2”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:181 (check_function_exists)"
+    checks:
+      - "Looking for fpclass"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-GTal1Q"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-GTal1Q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FPCLASS"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-GTal1Q'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e576/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8e576.dir/build.make CMakeFiles/cmTC_8e576.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-GTal1Q”
+        Building C object CMakeFiles/cmTC_8e576.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fpclass -o CMakeFiles/cmTC_8e576.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-GTal1Q/CheckFunctionExists.c
+        Linking C executable cmTC_8e576
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e576.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fpclass CMakeFiles/cmTC_8e576.dir/CheckFunctionExists.c.o -o cmTC_8e576 
+        /usr/bin/ld: CMakeFiles/cmTC_8e576.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `fpclass'
+        collect2: 错误：ld 返回 1
+        gmake[1]: *** [CMakeFiles/cmTC_8e576.dir/build.make:99：cmTC_8e576] 错误 1
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-GTal1Q”
+        gmake: *** [Makefile:127：cmTC_8e576/fast] 错误 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:182 (check_function_exists)"
+    checks:
+      - "Looking for ftime"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-BAvUIR"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-BAvUIR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FTIME"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-BAvUIR'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0a026/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0a026.dir/build.make CMakeFiles/cmTC_0a026.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-BAvUIR”
+        Building C object CMakeFiles/cmTC_0a026.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=ftime -o CMakeFiles/cmTC_0a026.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-BAvUIR/CheckFunctionExists.c
+        Linking C executable cmTC_0a026
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a026.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ftime CMakeFiles/cmTC_0a026.dir/CheckFunctionExists.c.o -o cmTC_0a026 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-BAvUIR”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:183 (check_function_exists)"
+    checks:
+      - "Looking for getentropy"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lqU9d1"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lqU9d1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETENTROPY"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lqU9d1'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6962c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6962c.dir/build.make CMakeFiles/cmTC_6962c.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lqU9d1”
+        Building C object CMakeFiles/cmTC_6962c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getentropy -o CMakeFiles/cmTC_6962c.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lqU9d1/CheckFunctionExists.c
+        Linking C executable cmTC_6962c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6962c.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getentropy CMakeFiles/cmTC_6962c.dir/CheckFunctionExists.c.o -o cmTC_6962c 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-lqU9d1”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:184 (check_function_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-hpT6Jn"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-hpT6Jn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-hpT6Jn'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_afbcf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_afbcf.dir/build.make CMakeFiles/cmTC_afbcf.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-hpT6Jn”
+        Building C object CMakeFiles/cmTC_afbcf.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettimeofday -o CMakeFiles/cmTC_afbcf.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-hpT6Jn/CheckFunctionExists.c
+        Linking C executable cmTC_afbcf
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afbcf.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettimeofday CMakeFiles/cmTC_afbcf.dir/CheckFunctionExists.c.o -o cmTC_afbcf 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-hpT6Jn”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:185 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-o9gw6e"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-o9gw6e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-o9gw6e'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e7f9e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e7f9e.dir/build.make CMakeFiles/cmTC_e7f9e.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-o9gw6e”
+        Building C object CMakeFiles/cmTC_e7f9e.dir/HAVE_INTTYPES_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_e7f9e.dir/HAVE_INTTYPES_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-o9gw6e/HAVE_INTTYPES_H.c
+        Linking C executable cmTC_e7f9e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7f9e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e7f9e.dir/HAVE_INTTYPES_H.c.o -o cmTC_e7f9e 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-o9gw6e”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:186 (check_function_exists)"
+    checks:
+      - "Looking for isascii"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-XTOwje"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-XTOwje"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ISASCII"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-XTOwje'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c00b4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c00b4.dir/build.make CMakeFiles/cmTC_c00b4.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-XTOwje”
+        Building C object CMakeFiles/cmTC_c00b4.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isascii -o CMakeFiles/cmTC_c00b4.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-XTOwje/CheckFunctionExists.c
+        <命令行>: 警告：conflicting types for built-in function ‘isascii’; expected ‘int(int)’ [-Wbuiltin-declaration-mismatch]
+        /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-XTOwje/CheckFunctionExists.c:7:3: 附注：in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        Linking C executable cmTC_c00b4
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c00b4.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isascii CMakeFiles/cmTC_c00b4.dir/CheckFunctionExists.c.o -o cmTC_c00b4 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-XTOwje”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:187 (check_library_exists)"
+    checks:
+      - "Looking for append_history in history"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-KepgRm"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-KepgRm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_LIBHISTORY"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-KepgRm'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5bd2e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5bd2e.dir/build.make CMakeFiles/cmTC_5bd2e.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-KepgRm”
+        Building C object CMakeFiles/cmTC_5bd2e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=append_history -o CMakeFiles/cmTC_5bd2e.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-KepgRm/CheckFunctionExists.c
+        Linking C executable cmTC_5bd2e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bd2e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=append_history CMakeFiles/cmTC_5bd2e.dir/CheckFunctionExists.c.o -o cmTC_5bd2e  -lhistory 
+        /usr/bin/ld: 找不到 -lhistory
+        collect2: 错误：ld 返回 1
+        gmake[1]: *** [CMakeFiles/cmTC_5bd2e.dir/build.make:99：cmTC_5bd2e] 错误 1
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-KepgRm”
+        gmake: *** [Makefile:127：cmTC_5bd2e/fast] 错误 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:188 (check_library_exists)"
+    checks:
+      - "Looking for readline in readline"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-gZXsjT"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-gZXsjT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_LIBREADLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-gZXsjT'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_31fd8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_31fd8.dir/build.make CMakeFiles/cmTC_31fd8.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-gZXsjT”
+        Building C object CMakeFiles/cmTC_31fd8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=readline -o CMakeFiles/cmTC_31fd8.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-gZXsjT/CheckFunctionExists.c
+        Linking C executable cmTC_31fd8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31fd8.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=readline CMakeFiles/cmTC_31fd8.dir/CheckFunctionExists.c.o -o cmTC_31fd8  -lreadline 
+        /usr/bin/ld: 找不到 -lreadline
+        collect2: 错误：ld 返回 1
+        gmake[1]: *** [CMakeFiles/cmTC_31fd8.dir/build.make:99：cmTC_31fd8] 错误 1
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-gZXsjT”
+        gmake: *** [Makefile:127：cmTC_31fd8/fast] 错误 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:189 (check_function_exists)"
+    checks:
+      - "Looking for mmap"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EPjfgF"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EPjfgF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_MMAP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EPjfgF'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e610/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e610.dir/build.make CMakeFiles/cmTC_9e610.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EPjfgF”
+        Building C object CMakeFiles/cmTC_9e610.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mmap -o CMakeFiles/cmTC_9e610.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EPjfgF/CheckFunctionExists.c
+        Linking C executable cmTC_9e610
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e610.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mmap CMakeFiles/cmTC_9e610.dir/CheckFunctionExists.c.o -o cmTC_9e610 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EPjfgF”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:190 (check_function_exists)"
+    checks:
+      - "Looking for munmap"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-FzAvvt"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-FzAvvt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_MUNMAP"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-FzAvvt'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_82fd0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_82fd0.dir/build.make CMakeFiles/cmTC_82fd0.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-FzAvvt”
+        Building C object CMakeFiles/cmTC_82fd0.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=munmap -o CMakeFiles/cmTC_82fd0.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-FzAvvt/CheckFunctionExists.c
+        Linking C executable cmTC_82fd0
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82fd0.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=munmap CMakeFiles/cmTC_82fd0.dir/CheckFunctionExists.c.o -o cmTC_82fd0 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-FzAvvt”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:191 (check_include_files)"
+    checks:
+      - "Looking for include file netdb.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Z4AHBh"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Z4AHBh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_NETDB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Z4AHBh'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_628ca/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_628ca.dir/build.make CMakeFiles/cmTC_628ca.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Z4AHBh”
+        Building C object CMakeFiles/cmTC_628ca.dir/HAVE_NETDB_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_628ca.dir/HAVE_NETDB_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Z4AHBh/HAVE_NETDB_H.c
+        Linking C executable cmTC_628ca
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_628ca.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_628ca.dir/HAVE_NETDB_H.c.o -o cmTC_628ca 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Z4AHBh”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:192 (check_include_files)"
+    checks:
+      - "Looking for include file netinet/in.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ekHRog"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ekHRog"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_NETINET_IN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ekHRog'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c46df/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c46df.dir/build.make CMakeFiles/cmTC_c46df.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ekHRog”
+        Building C object CMakeFiles/cmTC_c46df.dir/HAVE_NETINET_IN_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c46df.dir/HAVE_NETINET_IN_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ekHRog/HAVE_NETINET_IN_H.c
+        Linking C executable cmTC_c46df
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c46df.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c46df.dir/HAVE_NETINET_IN_H.c.o -o cmTC_c46df 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-ekHRog”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:193 (check_include_files)"
+    checks:
+      - "Looking for include file poll.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Ifh7UE"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Ifh7UE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_POLL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Ifh7UE'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d76f2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d76f2.dir/build.make CMakeFiles/cmTC_d76f2.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Ifh7UE”
+        Building C object CMakeFiles/cmTC_d76f2.dir/HAVE_POLL_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d76f2.dir/HAVE_POLL_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Ifh7UE/HAVE_POLL_H.c
+        Linking C executable cmTC_d76f2
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d76f2.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d76f2.dir/HAVE_POLL_H.c.o -o cmTC_d76f2 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Ifh7UE”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:194 (check_library_exists)"
+    checks:
+      - "Looking for shl_load in dld"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-luc5sT"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-luc5sT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SHLLOAD"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-luc5sT'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c547/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c547.dir/build.make CMakeFiles/cmTC_8c547.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-luc5sT”
+        Building C object CMakeFiles/cmTC_8c547.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shl_load -o CMakeFiles/cmTC_8c547.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-luc5sT/CheckFunctionExists.c
+        Linking C executable cmTC_8c547
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c547.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shl_load CMakeFiles/cmTC_8c547.dir/CheckFunctionExists.c.o -o cmTC_8c547  -ldld 
+        /usr/bin/ld: 找不到 -ldld
+        collect2: 错误：ld 返回 1
+        gmake[1]: *** [CMakeFiles/cmTC_8c547.dir/build.make:99：cmTC_8c547] 错误 1
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-luc5sT”
+        gmake: *** [Makefile:127：cmTC_8c547/fast] 错误 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:195 (check_function_exists)"
+    checks:
+      - "Looking for stat"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Afrf4v"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Afrf4v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STAT"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Afrf4v'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ff25f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ff25f.dir/build.make CMakeFiles/cmTC_ff25f.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Afrf4v”
+        Building C object CMakeFiles/cmTC_ff25f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=stat -o CMakeFiles/cmTC_ff25f.dir/CheckFunctionExists.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Afrf4v/CheckFunctionExists.c
+        Linking C executable cmTC_ff25f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff25f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=stat CMakeFiles/cmTC_ff25f.dir/CheckFunctionExists.c.o -o cmTC_ff25f 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Afrf4v”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:196 (check_include_files)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bj0X5d"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bj0X5d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bj0X5d'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ad289/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ad289.dir/build.make CMakeFiles/cmTC_ad289.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bj0X5d”
+        Building C object CMakeFiles/cmTC_ad289.dir/HAVE_STDINT_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ad289.dir/HAVE_STDINT_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bj0X5d/HAVE_STDINT_H.c
+        Linking C executable cmTC_ad289
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad289.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ad289.dir/HAVE_STDINT_H.c.o -o cmTC_ad289 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-Bj0X5d”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:197 (check_include_files)"
+    checks:
+      - "Looking for include file sys/mman.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-VLcUSL"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-VLcUSL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_MMAN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-VLcUSL'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d5fa6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d5fa6.dir/build.make CMakeFiles/cmTC_d5fa6.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-VLcUSL”
+        Building C object CMakeFiles/cmTC_d5fa6.dir/HAVE_SYS_MMAN_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d5fa6.dir/HAVE_SYS_MMAN_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-VLcUSL/HAVE_SYS_MMAN_H.c
+        Linking C executable cmTC_d5fa6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5fa6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d5fa6.dir/HAVE_SYS_MMAN_H.c.o -o cmTC_d5fa6 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-VLcUSL”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:198 (check_include_files)"
+    checks:
+      - "Looking for include file sys/random.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-rbGoHd"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-rbGoHd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_RANDOM_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-rbGoHd'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_acba8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_acba8.dir/build.make CMakeFiles/cmTC_acba8.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-rbGoHd”
+        Building C object CMakeFiles/cmTC_acba8.dir/HAVE_SYS_RANDOM_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_acba8.dir/HAVE_SYS_RANDOM_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-rbGoHd/HAVE_SYS_RANDOM_H.c
+        Linking C executable cmTC_acba8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_acba8.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_acba8.dir/HAVE_SYS_RANDOM_H.c.o -o cmTC_acba8 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-rbGoHd”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:199 (check_include_files)"
+    checks:
+      - "Looking for include file sys/select.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-4VstpW"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-4VstpW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_SELECT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-4VstpW'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fe5e5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fe5e5.dir/build.make CMakeFiles/cmTC_fe5e5.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-4VstpW”
+        Building C object CMakeFiles/cmTC_fe5e5.dir/HAVE_SYS_SELECT_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_fe5e5.dir/HAVE_SYS_SELECT_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-4VstpW/HAVE_SYS_SELECT_H.c
+        Linking C executable cmTC_fe5e5
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe5e5.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fe5e5.dir/HAVE_SYS_SELECT_H.c.o -o cmTC_fe5e5 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-4VstpW”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:200 (check_include_files)"
+    checks:
+      - "Looking for include file sys/socket.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-vwINXz"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-vwINXz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_SOCKET_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-vwINXz'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_71926/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_71926.dir/build.make CMakeFiles/cmTC_71926.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-vwINXz”
+        Building C object CMakeFiles/cmTC_71926.dir/HAVE_SYS_SOCKET_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_71926.dir/HAVE_SYS_SOCKET_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-vwINXz/HAVE_SYS_SOCKET_H.c
+        Linking C executable cmTC_71926
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71926.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_71926.dir/HAVE_SYS_SOCKET_H.c.o -o cmTC_71926 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-vwINXz”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:201 (check_include_files)"
+    checks:
+      - "Looking for include file sys/stat.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-pQrBqt"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-pQrBqt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-pQrBqt'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60082/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_60082.dir/build.make CMakeFiles/cmTC_60082.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-pQrBqt”
+        Building C object CMakeFiles/cmTC_60082.dir/HAVE_SYS_STAT_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_60082.dir/HAVE_SYS_STAT_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-pQrBqt/HAVE_SYS_STAT_H.c
+        Linking C executable cmTC_60082
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60082.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_60082.dir/HAVE_SYS_STAT_H.c.o -o cmTC_60082 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-pQrBqt”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:202 (check_include_files)"
+    checks:
+      - "Looking for include file sys/timeb.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0eEpGd"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0eEpGd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TIMEB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0eEpGd'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f551c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f551c.dir/build.make CMakeFiles/cmTC_f551c.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0eEpGd”
+        Building C object CMakeFiles/cmTC_f551c.dir/HAVE_SYS_TIMEB_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_f551c.dir/HAVE_SYS_TIMEB_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0eEpGd/HAVE_SYS_TIMEB_H.c
+        Linking C executable cmTC_f551c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f551c.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f551c.dir/HAVE_SYS_TIMEB_H.c.o -o cmTC_f551c 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0eEpGd”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:203 (check_include_files)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-TvBhCR"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-TvBhCR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-TvBhCR'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ece44/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ece44.dir/build.make CMakeFiles/cmTC_ece44.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-TvBhCR”
+        Building C object CMakeFiles/cmTC_ece44.dir/HAVE_SYS_TIME_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ece44.dir/HAVE_SYS_TIME_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-TvBhCR/HAVE_SYS_TIME_H.c
+        Linking C executable cmTC_ece44
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ece44.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ece44.dir/HAVE_SYS_TIME_H.c.o -o cmTC_ece44 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-TvBhCR”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:205 (check_c_source_compiles)"
+    checks:
+      - "Performing Test XML_SOCKLEN_T_SOCKLEN_T"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0yVEbo"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0yVEbo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "XML_SOCKLEN_T_SOCKLEN_T"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0yVEbo'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a631b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a631b.dir/build.make CMakeFiles/cmTC_a631b.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0yVEbo”
+        Building C object CMakeFiles/cmTC_a631b.dir/src.c.o
+        /usr/bin/cc -DXML_SOCKLEN_T_SOCKLEN_T   -o CMakeFiles/cmTC_a631b.dir/src.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0yVEbo/src.c
+        Linking C executable cmTC_a631b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a631b.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_a631b.dir/src.c.o -o cmTC_a631b 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-0yVEbo”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:374 (check_include_files)"
+    checks:
+      - "Looking for include file pthread.h"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EYMALg"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EYMALg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PTHREAD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EYMALg'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67d0a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_67d0a.dir/build.make CMakeFiles/cmTC_67d0a.dir/build
+        gmake[1]: 进入目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EYMALg”
+        Building C object CMakeFiles/cmTC_67d0a.dir/HAVE_PTHREAD_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_67d0a.dir/HAVE_PTHREAD_H.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EYMALg/HAVE_PTHREAD_H.c
+        Linking C executable cmTC_67d0a
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67d0a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_67d0a.dir/HAVE_PTHREAD_H.c.o -o cmTC_67d0a 
+        gmake[1]: 离开目录“/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-EYMALg”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:469 (check_linker_flag)"
+    checks:
+      - "Performing Test FLAG_UNDEFINED_VERSION"
+    directories:
+      source: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-T39bnk"
+      binary: "/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-T39bnk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "FLAG_UNDEFINED_VERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-T39bnk'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_21787/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_21787.dir/build.make CMakeFiles/cmTC_21787.dir/build
+        gmake[1]: Entering directory '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-T39bnk'
+        Building C object CMakeFiles/cmTC_21787.dir/src.c.o
+        /usr/bin/cc -DFLAG_UNDEFINED_VERSION  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args  -o CMakeFiles/cmTC_21787.dir/src.c.o -c /root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-T39bnk/src.c
+        Linking C executable cmTC_21787
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21787.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args  -Wl,--undefined-version CMakeFiles/cmTC_21787.dir/src.c.o -o cmTC_21787 
+        /usr/bin/ld: unrecognized option '--undefined-version'
+        /usr/bin/ld: use the --help option for usage information
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_21787.dir/build.make:99: cmTC_21787] Error 1
+        gmake[1]: Leaving directory '/root/workspace/mllib-sandbox/test/libxml2/build/CMakeFiles/CMakeScratch/TryCompile-T39bnk'
+        gmake: *** [Makefile:127: cmTC_21787/fast] Error 2
+        
+      exitCode: 2
+...

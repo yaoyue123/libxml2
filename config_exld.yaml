@@ -1,0 +1,16 @@
+---
+
+sandboxs:
+  a1:
+    selectors:
+      - libz
+      - libxml2
+      - LibXml2
+    shm_size: 16
+    nsconfig:
+      rw_dirs:
+        - "/home/a402/"
+  main:
+    selectors:
+  
+multithread : no

@@ -12,6 +12,49 @@ set(VERSION "${LIBXML_MAJOR_VERSION}.${LIBXML_MINOR_VERSION}.${LIBXML_MICRO_VERS
 
 project(libxml2 VERSION ${VERSION} LANGUAGES C)
 
+option(CALIbuilder "Build with CALI" OFF)  # Define CALIbuilder option
+
+if(CALIbuilder)
+    #######################cali
+    set(CMAKE_C_COMPILER clang-7)
+    set(CMAKE_CXX_COMPILER clang++-7)
+    set(CALI_CONFIG_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+    set(CALI_DIR "/home/a402/workspace/Cali-library-isolation/build/")
+
+    add_library(CALI_ISOLATION_OPTIONS INTERFACE)
+
+    # 设置编译生成llvm IR bitcode 中间代码文件 而不是本地机器代码
+    target_compile_options(CALI_ISOLATION_OPTIONS
+        INTERFACE -emit-llvm
+    )
+
+    # 设置链接时使用exld链接器，并指定配置文件
+    target_link_options(CALI_ISOLATION_OPTIONS
+                        INTERFACE -fuse-ld=${CALI_DIR}/cali-linker/cali
+                                -Wl,--cali-config=${CALI_CONFIG_PATH}/config_cali.yaml -v)
+else()
+    #######################异构语言沙箱
+    set(CMAKE_C_COMPILER clang)
+    set(CMAKE_CXX_COMPILER clang++)
+    set(EXLD_CONFIG_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+    set(EXLD_DIR "/root/workspace/mllib-sandbox/sandbox/build")
+
+    add_library(EXLD_ISOLATION_OPTIONS INTERFACE)
+
+    # 设置编译生成llvm IR bitcode 中间代码文件 而不是本地机器代码
+    target_compile_options(EXLD_ISOLATION_OPTIONS
+        INTERFACE -emit-llvm
+    )
+
+    # 设置链接时使用exld链接器，并指定配置文件
+    target_link_options(EXLD_ISOLATION_OPTIONS
+                        INTERFACE --ld-path=${EXLD_DIR}/bin/exld
+                                -Wl,--exld-config=${EXLD_CONFIG_PATH}/config_exld.yaml
+                                -L ${EXLD_DIR}/lib
+                                -Wl,-rpath=${EXLD_DIR}/lib
+                                )
+endif()
+
 include(CheckCSourceCompiles)
 include(CheckFunctionExists)
 include(CheckIncludeFiles)
@@ -485,7 +528,11 @@ if(LIBXML2_WITH_PROGRAMS)
 		add_executable(${PROGRAM} ${PROGRAM}.c)
 		add_executable(LibXml2::${PROGRAM} ALIAS ${PROGRAM})
 		target_compile_definitions(${PROGRAM} PRIVATE SYSCONFDIR="${CMAKE_INSTALL_FULL_SYSCONFDIR}")
-		target_link_libraries(${PROGRAM} LibXml2)
+        if(CALIbuilder)
+            target_link_libraries(${PROGRAM} LibXml2 CALI_ISOLATION_OPTIONS)
+        else()
+            target_link_libraries(${PROGRAM} LibXml2 EXLD_ISOLATION_OPTIONS)
+        endif()
 		if(HAVE_LIBHISTORY)
 			target_link_libraries(${PROGRAM} history)
 		endif()

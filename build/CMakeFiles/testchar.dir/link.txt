@@ -1,0 +1,1 @@
+clang  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args CMakeFiles/testchar.dir/testchar.c.o -o testchar  -Wl,-rpath,/root/workspace/mllib-sandbox/test/libxml2/build libxml2.so.2.13.0 
